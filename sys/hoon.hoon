@@ -14401,11 +14401,11 @@
       (rune ':*' `['=='] `['[' ' ' ']'] kids)
     ::
     ++  render-atom
-     |=  [=aura =atom]
-     ^-  cord
-     ?:  =(aura '')
-       (scot %ud atom)
-     (scot aura atom)
+      |=  [=aura =atom]
+      ^-  cord
+      ?:  =(aura '')
+        (scot %ud atom)
+      (scot aura atom)
     ::
     ++  render-const
       |=  [=aura const=@ =atom]
